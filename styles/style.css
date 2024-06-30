@@ -33,7 +33,7 @@
 
 body {
   background-color: var(--color-primary-cream);
-  font: 500 0.875rem/1.6 var(--font-secondary);
+  font: 500 0.875rem/1.4375rem var(--font-secondary);
   color: var(--color-neutral-dark-grayish-blue);
 }
 
@@ -46,24 +46,27 @@ body {
 
 .container {
   max-width: 37.5rem;
-  padding: 1.75rem 1rem;
+  margin: 1rem;
 }
 
 .card {
   border-radius: 0.625rem;
-  min-height: 28.125rem;
+  /* min-height: 28.125rem; */
   background-color: var(--color-neutral-white);
   display: flex;
 }
 
 .card__img-wrap {
-  flex: 0 0 18.75rem;
-
   background-image: url(/assets/images/image-product-desktop.jpg);
   background-size: cover;
   background-position: center;
   border-top-left-radius: 0.625rem;
   border-bottom-left-radius: 0.625rem;
+}
+
+.card__img-wrap,
+.card__details {
+  flex-basis: 18.75rem;
 }
 
 .card__details {
@@ -78,14 +81,14 @@ body {
 }
 
 .card__details .title {
-  font: 700 2rem/1 var(--font-primary);
+  font: 700 2rem/2rem var(--font-primary);
   color: var(--color-neutral-very-dark-blue);
   margin: 1.25rem 0 1.5rem;
 }
 
 .card__details .price {
   color: var(--color-primary-primary-dark-cyan);
-  font: 700 2rem/1 var(--font-primary);
+  font: 700 2rem/2rem var(--font-primary);
 
   display: flex;
   align-items: center;
