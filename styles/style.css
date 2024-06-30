@@ -92,6 +92,10 @@ body {
   gap: 1.1875rem;
 }
 
+.card__details .price span {
+  color: var(--color-neutral-dark-grayish-blue);
+}
+
 .card__details .description {
   margin-bottom: 1.8125rem;
 }
